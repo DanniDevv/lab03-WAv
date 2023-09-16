@@ -1,18 +1,20 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmación de Matrícula</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/confirmacion.css">
 </head>
+
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">Confirmación de Matrícula</h1>
+    <div class="container">
+        <h1>Confirmación de Matrícula</h1>
         <hr>
 
         <h3>Curso seleccionado:</h3>
-        <p><strong>Curso: </strong> <%= curso %></p>
-        <p><strong>Precio: </strong> <%= totalpagar %> </p>
+        <p><strong>Curso:</strong> <%= curso %></p>
 
         <h3>Medio de pago seleccionado:</h3>
         <p><strong>Medio de Pago:</strong> <%= medioPago %></p>
@@ -22,10 +24,10 @@
 
         <ul>
             <li><strong>Curso:</strong> <%= curso %></li>
-            <li><strong>Total a pagar: S/. </strong><%= totalpagar %> </li>
-            <li><strong>Medio de Pago: </strong> <%= medioPago %></li>
+            <li><strong>Total a pagar:</strong> S/. <%= totalpagar %></li>
+            <li><strong>Medio de Pago:</strong> <%= medioPago %></li>
         </ul>
+        <button class="btn" onclick="window.print()">Imprimir Confirmación</button>
     </div>
 </body>
 </html>
-

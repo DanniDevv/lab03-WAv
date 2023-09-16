@@ -1,58 +1,317 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Matrículas</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container mt-5">
-        <h1 class="text-center">Sistema de Matrículas</h1>
-        <hr>
+<html lang="en">
 
-        <h3>Seleccione un curso:</h3>
-        <form action="/confirmacion" method="post">
-            <div class="form-group">
-                <div class="form-group">
-                    <label for="curso">Curso:</label>
-                    <select class="form-control" id="curso" name="curso">
-                        <option value="Java">Java</option>
-                        <option value="PHP">PHP</option>
-                        <option value=".NET">.NET</option>
-                    </select>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Matricula</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#!">TECSUP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#Cursos">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Precios">Precios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#compra">Comprar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center my-5">
+                        <h1 class="display-5 fw-bolder text-white mb-2">Matriculas abiertas para nuevos cursos</h1>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#Cursos">Cursos</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="#Precios">Precios</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </header>
+    <!-- Features section-->
+    <section class="py-5 border-bottom" id="Cursos">
+        <div class="container px-5 my-5">
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                            class="bi bi-collection"></i></div>
+                    <h2 class="h4 fw-bolder">JAVA</h2>
+                    <p>Java es una herramienta poderosa en el mundo de la programación,
+                        y al finalizar este curso, estarás preparado para crear tus propias
+                        aplicaciones Java, comprender su arquitectura y, lo que es más importante,
+                        estarás listo para enfrentar desafíos en el emocionante mundo del desarrollo
+                        de software. ¡Comencemos nuestro viaje en el mundo de Java!"</p>
+                    <a class="text-decoration-none" href="https://docs.oracle.com/en/java/">
+                        Documentación
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i>
+                    </div>
+                    <h2 class="h4 fw-bolder">PHP</h2>
+                    <p>PHP es uno de los lenguajes de programación más populares en el desarrollo web,
+                        y su comunidad de desarrolladores es muy activa. Al finalizar este curso,
+                        estarás preparado para construir tu propio sitio web dinámico, entenderás
+                        cómo funcionan las aplicaciones web en el lado del servidor y tendrás las
+                        habilidades necesarias para trabajar en proyectos web emocionantes.</p>
+                    <a class="text-decoration-none" href="https://www.php.net/docs.php">
+                        Documentación
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i>
+                    </div>
+                    <h2 class="h4 fw-bolder">.NET</h2>
+                    <p>Durante este curso, exploraremos los fundamentos de .NET, centrándonos en el
+                        lenguaje C# y el desarrollo de aplicaciones en el entorno .NET. Aprenderás
+                        sobre la programación orientada a objetos, la creación de aplicaciones de
+                        consola, aplicaciones de Windows Forms y aplicaciones web ASP.NET. También
+                        exploraremos cómo trabajar con bases de datos utilizando Entity Framework,
+                        una tecnología de mapeo objeto-relacional (ORM) de .NET.</p>
+                    <a class="text-decoration-none" href="https://learn.microsoft.com/es-es/dotnet/">
+                        Documentación
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing section-->
+    <section class="bg-light py-5 border-bottom" id="Precios">
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bolder">Escoge tu curso para iniciar como desarrollador</h2>
+                <p class="lead mb-0"></p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <!-- Pricing card free-->
+                <div class="col-lg-6 col-xl-4">
+                    <div class="card mb-5 mb-xl-0">
+                        <div class="card-body p-5">
+                            <div class="small text-uppercase fw-bold text-muted">
+                                <i class="bi bi-star-fill text-warning"></i>JAVA</div>
+                            <div class="mb-3">
+                                <span class="display-4 fw-bold">S/.1200</span>
+                                <span class="text-muted">/ mo.</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    <strong>16 modulos</strong>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Conferencias Virtuales
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Examenes parciales
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Docentes Capacitados
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Certificado
+                                </li>
+                            </ul>
+                            <div class="d-grid"><a class="btn btn-primary" href="#compra">Adquirir</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pricing card pro-->
+                <div class="col-lg-6 col-xl-4">
+                    <div class="card mb-5 mb-xl-0">
+                        <div class="card-body p-5">
+                            <div class="small text-uppercase fw-bold">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                PHP
+                            </div>
+                            <div class="mb-3">
+                                <span class="display-4 fw-bold">S/.800</span>
+                                <span class="text-muted">/ mo.</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    <strong>16 modulos</strong>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Conferencias Virtuales
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Examenes parciales
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Docentes Capacitados
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Certificado
+                                </li>
+                            </ul>
+                            <div class="d-grid"><a class="btn btn-primary" href="#compra">Adquirir</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pricing card enterprise-->
+                <div class="col-lg-6 col-xl-4">
+                    <div class="card">
+                        <div class="card-body p-5">
+                            <div class="small text-uppercase fw-bold text-muted"><i class="bi bi-star-fill text-warning"></i>
+                                .NET</div>
+                            <div class="mb-3">
+                                <span class="display-4 fw-bold">S/.1500</span>
+                                <span class="text-muted">/ mo.</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    <strong>16 modulos</strong>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Conferencias Virtuales
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Examenes parciales
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Docentes Capacitados
+                                </li>
+                                <li class="mb-2 ">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Certificado
+                                </li>
+                            </ul>
+                            <div class="d-grid"><a class="btn btn-primary" href="#compra">Adquirir</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h3>Seleccione los módulos que el participante llevará:</h3>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="basico" name="modulos[]" value="Basico">
-                <label class="form-check-label" for="basico">Básico</label>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="intermedio" name="modulos[]" value="Intermedio">
-                <label class="form-check-label" for="intermedio">Intermedio</label>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="avanzado" name="modulos[]" value="Avanzado">
-                <label class="form-check-label" for="avanzado">Avanzado</label>
-            </div>
 
-            <h3>Seleccione el medio de pago:</h3>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" id="tarjeta" name="medioPago" value="Tarjeta de crédito">
-                <label class="form-check-label" for="tarjeta">Tarjeta de crédito</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" id="efectivo" name="medioPago" value="Pago en efectivo">
-                <label class="form-check-label" for="efectivo">Pago en efectivo</label>
-            </div>
-            
+    <section class="bg-light py-5 border-bottom" id="compra">
+        <div class="container mt-5">
+            <h1 class="text-center">Sistema de Matrículas</h1>
+            <form action="/confirmacion" method="post" class="styled-form">
+                <div class="form-group row">
+                    <label for="curso" class="col-sm-3 col-form-label text-right"><h3>Curso:</h3></label>
+                    <div class="col-sm-9">
+                        <select class="form-control" id="curso" name="curso">
+                            <option value="Java">Java</option>
+                            <option value="PHP">PHP</option>
+                            <option value=".NET">.NET</option>
+                        </select>
+                    </div>
+                </div>
 
+                <h2>Seleccione los módulos que el participante llevará:</h2>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="basico" name="modulos[]" value="Basico">
+                    <label class="form-check-label" for="basico">Básico</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="intermedio" name="modulos[]" value="Intermedio">
+                    <label class="form-check-label" for="intermedio">Intermedio</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="avanzado" name="modulos[]" value="Avanzado">
+                    <label class="form-check-label" for="avanzado">Avanzado</label>
+                </div>
 
-            <button type="submit" class="btn btn-primary">Siguiente</button>
-        </form>
-    </div>
+                <h2>Seleccione el medio de pago:</h2>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="tarjeta" name="medioPago"
+                        value="Tarjeta de crédito">
+                    <label class="form-check-label" for="tarjeta">Tarjeta de crédito</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="efectivo" name="medioPago"
+                        value="Pago en efectivo">
+                    <label class="form-check-label" for="efectivo">Pago en efectivo</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3">Siguiente</button>
+            </form>
+        </div>
+    </section>
+
+    <style>
+        /* Estilos para el formulario */
+        .styled-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para los checkboxes y radios */
+        .form-check-input[type="checkbox"],
+        .form-check-input[type="radio"] {
+            margin-right: 10px;
+            transform: scale(1.5);
+            /* Aumentar el tamaño de los checkboxes y radios */
+        }
+
+        /* Estilos para los botones */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-5">
+            <p class="m-0 text-center text-white">TECSUP &copy; Your Website 2023</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
-<script>
-    
-</script>
+
 </html>
