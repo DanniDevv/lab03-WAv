@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <h1 class="title">LAB 03 Node.JS y Express</h1>
+<h1 class="title">LAB 03 Node.JS y Express</h1>
         <h2>Para inicilizar tu proyecto</h2>
         <ul>
             <li>npm init -y</li>
@@ -21,7 +14,3 @@
         </ul>
         <h2>Referencia</h2>    
 ![img2](https://github.com/DanniDevv/lab03-WAv/assets/89816411/85d3bb39-8555-4120-9740-f55390f5db06)
-
-
-</body>
-</html>
