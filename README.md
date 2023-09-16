@@ -21,7 +21,8 @@
             <li>npm install jquery</li>
         </ul>
         <h2>Referencia</h2>
-        <img src="https://drive.google.com/file/d/1XIHn_J0HWCJT12frvquGwIbAmYUwti8R/view?usp=drive_link" alt="">
+        <img src="![img2](https://github.com/DanniDevv/lab03-WAv/assets/89816411/3ef25852-317d-48c3-874c-70a864435b2d)
+" alt="">
     </div>
 </body>
 </html>
