@@ -19,8 +19,9 @@
             <li>npm install popper.js</li>
             <li>npm install jquery</li>
         </ul>
-        <h2>Referencia</h2>     
-    ![img2](https://github.com/DanniDevv/lab03-WAv/assets/89816411/0ef9557e-7c9a-4e88-9c76-f676d5d87c45)
+        <h2>Referencia</h2>    
+    
+    ![img2](https://github.com/DanniDevv/lab03-WAv/assets/89816411/6f0e5dfa-f976-4aaa-822e-a5bb6e11bd17)
 
 </body>
 </html>
