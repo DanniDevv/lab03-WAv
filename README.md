@@ -20,8 +20,8 @@
             <li>npm install jquery</li>
         </ul>
         <h2>Referencia</h2>    
-    
-    ![img2](https://github.com/DanniDevv/lab03-WAv/assets/89816411/6f0e5dfa-f976-4aaa-822e-a5bb6e11bd17)
+![img2](https://github.com/DanniDevv/lab03-WAv/assets/89816411/85d3bb39-8555-4120-9740-f55390f5db06)
+
 
 </body>
 </html>
