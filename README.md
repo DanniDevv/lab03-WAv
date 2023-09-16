@@ -3,34 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Courier New', monospace;
-            background-color: black;
-            color: white;
-            padding: 20px;
-        }
-
-        .container {
-            background-color: #111;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        h1.title {
-            color: cyan;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 5px 0;
-            font-size: 18px;
-        }
-    </style>
 </head>
 <body>
     <h1 class="title">LAB 03 Node.JS y Express</h1>
