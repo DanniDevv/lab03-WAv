@@ -6,7 +6,6 @@
 </head>
 <body>
     <h1 class="title">LAB 03 Node.JS y Express</h1>
-    <div class="container">
         <h2>Para inicilizar tu proyecto</h2>
         <ul>
             <li>npm init -y</li>
@@ -21,7 +20,7 @@
             <li>npm install jquery</li>
         </ul>
         <h2>Referencia</h2>     
-![img2](https://github.com/DanniDevv/lab03-WAv/assets/89816411/94265f47-240a-4d50-bcf4-b75ce3a12f0d)
-    </div>
+    ![img2](https://github.com/DanniDevv/lab03-WAv/assets/89816411/0ef9557e-7c9a-4e88-9c76-f676d5d87c45)
+
 </body>
 </html>
