@@ -13,12 +13,12 @@
         </ul>
         <h2>Instalación de dependencias</h2>
         <ul>
-            <il>npm install express</il>
-            <il>npm install ejs</il>
-            <il>npm install body-parser</il>
-            <il>npm install bootstrap</il>
-            <il>npm install popper.js</il>
-            <il>npm install jquery</il>
+            <li>npm install express</li>
+            <li>npm install ejs</li>
+            <li>npm install body-parser</li>
+            <li>npm install bootstrap</li>
+            <li>npm install popper.js</li>
+            <li>npm install jquery</li>
         </ul>
         <h2>Referencia</h2>
         <img src="https://drive.google.com/file/d/1XIHn_J0HWCJT12frvquGwIbAmYUwti8R/view?usp=drive_link" alt="">
