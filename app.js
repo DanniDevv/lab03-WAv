@@ -58,8 +58,9 @@ app.post('/confirmacion', (req, res) => {
 
     // Lógica para aplicar un descuento del 10% si el medio de pago es "Pago en efectivo"
     if (medioPago === 'Pago en efectivo') {
-        totalpagar *= 0.1; 
+        totalpagar = totalpagar - (totalpagar * 0.1); // Restar el 10% al total
     }
+
 
     // Lógica para procesar los datos y mostrar la vista de confirmación
     res.render('confirmacion', { curso, totalpagar, medioPago });
